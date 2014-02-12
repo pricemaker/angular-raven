@@ -29,7 +29,7 @@ module.provider('Raven', function() {
       },
       setUser: function setUser(user) {
         if (_development) {
-          $log.error('Raven: User ', user);
+          $log.info('Raven: User ', user);
         } else {
           $window.Raven.setUser(user);
         }
